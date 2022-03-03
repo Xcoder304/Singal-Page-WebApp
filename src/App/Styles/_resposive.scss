@@ -1,0 +1,139 @@
+@media (max-width: 1200px) {
+  html {
+    font-size: 58% !important;
+  }
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 54% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 47% !important;
+  }
+  .header {
+    padding: 1.3rem 1% 1.3rem 2% !important;
+
+    .hamburgarContainer {
+      display: block !important;
+    }
+
+    .navBar {
+      position: absolute;
+      right: 0;
+      top: 7rem;
+      width: 50%;
+      height: 100vh;
+      background: var(--BgBlack) !important;
+      transform: translateX(100rem);
+      transition: 0.4s !important;
+
+      &.active {
+        transform: translateX(0);
+        transition: 0.4s !important;
+      }
+
+      > ul {
+        flex-direction: column !important;
+
+        > li {
+          font-size: 2.1rem !important;
+        }
+      }
+      .dropdownParent {
+        &:hover .dropdowncontainer {
+          top: 2.2rem !important;
+        }
+        .dropdowncontainer {
+          top: -2rem;
+          left: -7rem !important;
+
+          .dropdown {
+            top: -2rem;
+          }
+        }
+      }
+    }
+  }
+  .pricingSection {
+    .cardContainer {
+      .cardWapper {
+        justify-content: center !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .navBar.active {
+    .dropdownParent {
+      &:hover .dropdowncontainer {
+        top: 2.2rem !important;
+      }
+      .dropdowncontainer {
+        top: -2rem;
+        transform: translateX(-12rem);
+
+        .dropdown {
+          top: -2rem;
+          border-radius: 5px;
+          border: 1px solid rgba(0, 0, 0, 0.6);
+          width: 16em;
+          padding: 0.5rem 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 44% !important;
+  }
+}
+
+@media (max-width: 350px) {
+  html {
+    font-size: 41% !important;
+  }
+}
+
+// for hero Section background
+@media (min-width: 1230px) {
+  .HeroSection {
+    height: 100vh !important;
+  }
+}
+
+// for pricing Section
+@media (max-width: 1100px) {
+  .pricingSection {
+    .cardContainer {
+      .cardWapper {
+        justify-content: center !important;
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .pricingSection {
+    .cardContainer {
+      .cardWapper {
+        justify-content: center !important;
+      }
+    }
+  }
+}
+
+// for footer
+@media (max-width: 520px) {
+  .bottomWapper {
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+  }
+}
